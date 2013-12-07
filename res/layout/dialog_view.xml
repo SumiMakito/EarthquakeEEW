@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:background="#FFFFFF">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/title">
+
+		<ImageView
+			android:id="@+id/win_close"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/close"
+			android:layout_centerVertical="true"
+			android:layout_alignParentLeft="true"/>
+
+		<TextView
+			android:id="@+id/win_title"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1.05"
+			android:gravity="center"
+			android:text="STAFF"
+			android:textColor="#ffffff"
+			android:textSize="20sp"
+			android:layout_centerInParent="true"/>
+
+	</RelativeLayout>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:orientation="vertical"
+		android:padding="10dp"
+		android:gravity="center">
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text="APP开发 SumiMakito\n数据来源 中国地震台网CEIC\n开发支持 百度开发者中心\n\n欢迎提交Bug及建议\n 让我们共同提高用户体验!"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_width="wrap_content"
+			android:visibility="gone"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text="APP开发/UI SumiMakito"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_width="wrap_content"
+			android:paddingBottom="5dp"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text="数据来源 中国地震台网CEIC"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_width="wrap_content"
+			android:paddingBottom="5dp"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text="开发支持 百度开发者中心"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_width="wrap_content"
+			android:paddingBottom="5dp"
+			android:visibility="gone"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text="欢迎提交Bug及反馈建议"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_width="wrap_content"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text="让我们共同提高用户体验!"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_width="wrap_content"
+			android:paddingBottom="5dp"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text="(C) 2012-2014 SumiApps"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:layout_width="wrap_content"/>
+
+	</LinearLayout>
+
+</LinearLayout>
+

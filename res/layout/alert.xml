@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent">
+
+	<LinearLayout
+		android:layout_height="fill_parent"
+		android:layout_width="fill_parent"
+		android:orientation="vertical"
+		android:padding="10dp"
+		android:gravity="center">
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text="緊急地震速報です\n強い揺れに警戒して下さい\n這是一條緊急地震速報\n請小心接下來的強烈搖晃"
+			android:layout_width="wrap_content"
+			android:textColor="#FF564B"
+			android:textSize="20sp"
+			android:shadowColor="#FFBDB8"
+			android:shadowRadius="5"/>
+
+		<LinearLayout
+			android:layout_height="match_parent"
+			android:layout_width="match_parent"
+			android:orientation="vertical"
+			android:paddingTop="8dp">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="詳細情報"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_width="match_parent"
+				android:paddingBottom="8dp"
+				android:gravity="center"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="震級"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:layout_width="match_parent"
+				android:paddingBottom="5dp"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:textStyle="bold"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_width="match_parent"
+				android:paddingBottom="10dp"
+				android:textColor="#FF0F00"
+				android:shadowColor="#FF4135"
+				android:id="@+id/AlertM"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="震中位置"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:layout_width="match_parent"
+				android:paddingBottom="5dp"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_width="match_parent"
+				android:paddingBottom="10dp"
+				android:id="@+id/AlertLOC"
+				android:textSize="20sp"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="震源深度"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:layout_width="match_parent"
+				android:paddingBottom="5dp"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_width="match_parent"
+				android:paddingBottom="10dp"
+				android:id="@+id/AlertDEPTH"
+				android:textSize="20sp"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="时间"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:layout_width="match_parent"
+				android:paddingBottom="5dp"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_width="match_parent"
+				android:paddingBottom="10dp"
+				android:id="@+id/AlertOTIME"
+				android:textSize="20sp"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="地理坐标"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:layout_width="match_parent"
+				android:paddingBottom="5dp"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_width="match_parent"
+				android:paddingBottom="10dp"
+				android:id="@+id/AlertPOS"
+				android:textSize="20sp"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="地图"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:layout_width="match_parent"
+				android:paddingBottom="5dp"
+				android:id="@+id/AlertTMap"/>
+
+			<ImageButton
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:id="@+id/AlertMAP"
+				android:background="#00000000"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</ScrollView>
+

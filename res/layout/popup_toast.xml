@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:gravity="center"
+	android:id="@+id/popup_toast"
+	android:background="#00FFFFFF"
+	android:padding="10dp">
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:text="紧急地震速报"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:layout_width="match_parent"
+		android:shadowRadius="1.0"
+		android:shadowColor="#000000"
+		android:shadowDx="1.0"
+		android:shadowDy="1.0"
+		android:textColor="#FFFFFF"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:text=""
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_width="match_parent"
+		android:id="@+id/PT_Loc"
+		android:shadowRadius="1.0"
+		android:shadowColor="#000000"
+		android:shadowDx="1.0"
+		android:shadowDy="1.0"
+		android:textColor="#FFFFFF"
+		android:paddingTop="3dp"
+		android:paddingBottom="3dp"/>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:weightSum="10">
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text=""
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_width="wrap_content"
+			android:layout_weight="5"
+			android:id="@+id/PT_Depth"
+			android:shadowRadius="1.0"
+			android:shadowColor="#000000"
+			android:shadowDx="1.0"
+			android:shadowDy="1.0"
+			android:textColor="#FFFFFF"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text=""
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_width="wrap_content"
+			android:layout_weight="5"
+			android:gravity="right"
+			android:id="@+id/PT_M"
+			android:shadowRadius="1.0"
+			android:shadowColor="#000000"
+			android:shadowDx="1.0"
+			android:shadowDy="1.0"
+			android:textColor="#FFFFFF"/>
+
+	</LinearLayout>
+
+</LinearLayout>
+

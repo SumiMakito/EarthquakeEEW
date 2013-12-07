@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="app.makito.kjs"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk 
+        android:minSdkVersion="8" />
+	
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+	<uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+		
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" 
+		android:persistent="true">
+        <activity
+            android:label="緊急地震速報"
+            android:name=".MainActivity" 
+			android:theme="@android:style/Theme.Holo.Light.Panel" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+		<!-- 旧式PushReceiver 现已被注册Receiver代替
+		<activity
+            android:label="KJSPushReceiver"
+            android:name=".PushReceiver" 
+			android:theme="@android:style/Theme.NoDisplay"
+			android:exported="true" >
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+		-->
+		<activity
+            android:label="KJSAlertDialog"
+            android:name=".AlertPopupDialog" 
+			android:theme="@android:style/Theme.NoDisplay"
+			android:exported="true" >
+            <intent-filter >
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+		<activity
+            android:label="緊急地震速報"
+            android:name=".AlertActivity" 
+			android:theme="@android:style/Theme.Holo.Light"
+			android:exported="true">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+		<activity
+            android:label="KJSAlertAlertBGP"
+            android:name=".AlertBGPlay" 
+			android:theme="@android:style/Theme.NoDisplay"
+			android:exported="true" >
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+		<activity
+            android:label="设置"
+            android:name=".Settings" 
+			android:theme="@android:style/Theme.Holo.Light"
+			android:exported="true" >
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+		<activity
+            android:label="TV_POPUP"
+            android:name=".TvPopup" 
+			android:exported="true" >
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+		<activity
+            android:label="实时速报"
+            android:name=".RtOneRep"
+			android:theme="@android:style/Theme.Holo.Light"
+			android:exported="true" >
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+		<activity
+            android:label="测试"
+            android:name=".TestOne"
+			android:theme="@android:style/Theme.Holo.Light"
+			android:exported="true" >
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+		<activity
+            android:label="MapContainer"
+            android:name=".MapContainer"
+			android:theme="@android:style/Theme.Holo.Light"
+			android:exported="true" >
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+		<activity
+            android:label="About"
+            android:name=".About"
+			android:theme="@android:style/Theme.Holo.Panel"
+			android:exported="true" >
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+		<!--广播注册 现已被常驻 Service 代替-->
+		<!--receiver 
+			android:name="app.makito.kjs.PushReceiver">
+			<intent-filter android:priority="1000">
+				<action android:name="app.makito.kjs.ALERT_MSG"/>
+			</intent-filter>
+		</receiver-->
+		<!--服務註冊-->
+		<service 
+			android:name="app.makito.kjs.RealtimeService"
+			android:label="RealtimeService" >  
+            <intent-filter>  
+                <action android:name="app.makito.kjs.RT_SERVICE"/>  
+            </intent-filter>              
+		</service>  
+		<!--service 
+			android:name="app.makito.kjs.NotificationService"
+			android:label="NotificationCenter" >  
+            <intent-filter>  
+                <action android:name="app.makito.kjs.NF_SERVICE"/>  
+            </intent-filter>              
+		</service-->  
+		<service 
+			android:name="app.makito.kjs.PollingService"
+			android:label="PollingService" >  
+            <intent-filter>  
+                <action android:name="app.makito.kjs.POLL_SERVICE"/>  
+            </intent-filter>              
+		</service>  
+    </application>
+
+</manifest>

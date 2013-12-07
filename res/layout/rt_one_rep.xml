@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="fill_parent"
+	android:layout_width="fill_parent">
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="vertical"
+		android:id="@+id/LtContent"
+		android:visibility="gone">
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text="实时速报 CEIC"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_width="wrap_content"
+			android:padding="5dp"
+			android:visibility="gone"/>
+
+		<ScrollView
+			android:layout_height="match_parent"
+			android:layout_width="match_parent">
+
+			<LinearLayout
+				android:layout_height="match_parent"
+				android:layout_width="fill_parent"
+				android:orientation="vertical">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_width="wrap_content"
+					android:padding="5dp"
+					android:id="@+id/rt_one_rep_out"/>
+
+			</LinearLayout>
+
+		</ScrollView>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:orientation="vertical"
+		android:layout_centerInParent="true"
+		android:gravity="center"
+		android:id="@+id/LtProgress">
+
+		<app.makito.kjs.GifLoadingView
+			android:padding="5dp"
+			android:layout_height="32px"
+			android:layout_width="32px"/>
+
+	</LinearLayout>
+
+</RelativeLayout>
+

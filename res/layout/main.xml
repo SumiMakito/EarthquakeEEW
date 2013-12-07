@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="fill_parent"
+	android:layout_width="fill_parent"
+	android:orientation="vertical"
+	android:background="#000000">
+
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:background="@drawable/panel_white">
+
+		<LinearLayout
+			android:id="@+id/linearLayout1"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_alignParentTop="true"
+			android:gravity="center_horizontal"
+			android:orientation="vertical">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:paddingTop="10dp"
+				android:text="緊急地震速報 APP"
+				android:textColor="#969696"
+				android:textSize="26sp"/>
+
+			<TextView
+				android:id="@+id/textView1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="配置应用 &gt; 实时同步服务 &gt; 开启"
+				android:textColor="#FF5555"
+				android:textStyle="bold"/>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:orientation="horizontal"
+				android:id="@+id/mainLoading">
+
+				<app.makito.kjs.GifLoadingView
+					android:padding="5dp"
+					android:layout_height="32px"
+					android:layout_width="32px"/>
+
+			</LinearLayout>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text=""
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:layout_width="match_parent"
+				android:padding="5dp"
+				android:textColor="#000000"
+				android:ellipsize="marquee"
+				android:focusable="true"
+				android:focusableInTouchMode="true"
+				android:marqueeRepeatLimit="marquee_forever"
+				android:id="@+id/mainSub"
+				android:gravity="center"
+				android:singleLine="true"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_alignParentBottom="true"
+			android:gravity="center_horizontal"
+			android:orientation="vertical">
+
+			<Button
+				android:id="@+id/mainBtnRtReports"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="3dp"
+				android:background="@xml/button_shape_conf"
+				android:text="实时速报"/>
+
+			<Button
+				android:id="@+id/mainBtnTestByBroadcast"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="3dp"
+				android:layout_marginBottom="3dp"
+				android:background="@xml/button_shape_conf"
+				android:text="测试紧急速报"/>
+
+			<Button
+				android:id="@+id/mainBtnSettings"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="3dp"
+				android:background="@xml/button_shape_conf"
+				android:text="设置"/>
+
+			<Button
+				android:id="@+id/mainBtnStartService"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@xml/button_shape_conf"
+				android:text="启动服务"
+				android:visibility="gone"/>
+
+			<Button
+				android:id="@+id/mainBtnStopService"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@xml/button_shape_conf"
+				android:text="停止服务"
+				android:visibility="gone"/>
+
+			<Button
+				android:id="@+id/mainBtnTest"
+				style="@xml/button_shape_conf"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@xml/button_shape_conf"
+				android:text="测试速报"
+				android:visibility="gone"/>
+
+			<Button
+				android:id="@+id/mainBtnAbout"
+				style="@xml/button_shape_conf"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@xml/button_shape_conf"
+				android:layout_margin="3dp"
+				android:layout_marginBottom="3dp"
+				android:text="STAFF"/>
+
+		</LinearLayout>
+
+	</RelativeLayout>
+
+</LinearLayout>
+

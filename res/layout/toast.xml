@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="horizontal"
+	android:gravity="center"
+	android:id="@+id/toast_layout"
+	android:alpha="80"
+	android:background="#313131">
+
+	<ImageView
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:src="@android:drawable/ic_popup_sync"
+		android:padding="10dp"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:text="Receiving Broadcasting..."
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_width="wrap_content"
+		android:padding="10dp"
+		android:textColor="#FFFFFF"/>
+
+</LinearLayout>
+

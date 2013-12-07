@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent"
+	android:padding="20dp">
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:gravity="center"
+		android:layout_alignParentTop="true"
+		android:layout_centerHorizontal="true"
+		android:background="#FB4A3E">
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text="緊急地震速報"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_width="match_parent"
+			android:padding="10dp"
+			android:gravity="center"
+			android:textColor="#FFFFFF"
+			android:textStyle="bold" />
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:layout_alignParentBottom="true"
+		android:layout_centerHorizontal="true"
+		android:gravity="center"
+		android:background="#FF483C">
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text="緊急地震速報"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_width="match_parent"
+			android:gravity="center"
+			android:textColor="#FFFFFF"/>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="horizontal"
+			android:padding="5dp"
+			android:gravity="center">
+
+			<ImageView
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:src="@drawable/ic_launcher"
+				android:visibility="gone"/>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:orientation="vertical"
+				android:paddingLeft="5dp">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:text="緊急地震速報です 強い揺れに警戒して下さい\n這是一條地震緊急速報 請小心接下來可能發生的強烈搖晃"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_width="match_parent"
+					android:textColor="#FFFFFF"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:text="札幌 北海道 四國 宮城"
+					android:layout_width="match_parent"
+					android:textColor="#FFFFFF"
+					android:gravity="center"
+					android:id="@+id/tvp_loc"
+					android:textStyle="bold"
+					android:textSize="16sp"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</RelativeLayout>
+

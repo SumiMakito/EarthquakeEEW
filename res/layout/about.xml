@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="fill_parent"
+	android:layout_width="fill_parent"
+	android:orientation="vertical"
+	android:background="#50000000">
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="vertical"
+		android:padding="15dp"
+		android:gravity="center">
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="vertical"
+			android:gravity="center"
+			android:padding="8dp"
+			android:background="@drawable/panel_white">
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:orientation="horizontal"
+				android:gravity="right">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:text="关于"
+					android:layout_width="wrap_content"
+					android:shadowColor="#000000"
+					android:textColor="#FFFFFF"
+					android:shadowDx="1.0"
+					android:shadowRadius="1.0"
+					android:shadowDy="1.0"
+					android:textSize="30sp"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:orientation="vertical">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:text="APP开发 SumiMakito\n数据来源 中国地震台网CEIC\n\n新浪微博 SumiMakito"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_width="wrap_content"
+					android:paddingBottom="10dp"
+					android:shadowColor="#000000"
+					android:textColor="#FFFFFF"
+					android:shadowDx="1.0"
+					android:shadowRadius="1.0"
+					android:shadowDy="1.0"/>
+
+				<Button
+					android:layout_height="wrap_content"
+					android:text="关闭"
+					android:layout_width="match_parent"
+					android:background="@xml/button_shape_conf"
+					android:id="@+id/aboutBtnClose"
+					android:textColor="#000000"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</LinearLayout>
+
