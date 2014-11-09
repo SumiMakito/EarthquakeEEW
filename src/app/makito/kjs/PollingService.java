@@ -100,6 +100,7 @@ public class PollingService extends Service
 								mSignal.putExtra("OTIME", OTIME);
 								mSignal.putExtra("X", X);
 								mSignal.putExtra("Y", Y);
+								//发送速报信号
 								sendBroadcast(mSignal);
 							}
 						}
